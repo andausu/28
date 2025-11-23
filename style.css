@@ -1,0 +1,141 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f5f5f5;
+}
+
+/* HEADER GRAFICO */
+.header-img {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.header-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.header-text {
+    position: absolute;
+    bottom: 18px;
+    left: 20px;
+    color: white;
+    text-shadow: 0px 3px 6px rgba(0,0,0,0.45);
+}
+.header-text h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+.header-text p {
+    margin: 3px 0 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* LINGUA */
+.lang-switch {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 10px 20px 0;
+}
+.lang-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #fff;
+    font-weight: 600;
+    font-size: 13px;
+}
+.lang-btn.active {
+    background: #000;
+    color: #fff;
+}
+
+/* FASCE */
+.fasce {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+}
+.fascia-btn {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #000;
+    background: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+}
+.fascia-btn.active {
+    background: #000;
+    color: #fff;
+}
+
+/* PILLS */
+.pill-wrapper {
+    padding: 5px 20px;
+}
+.pill-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.pill {
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+.pill-outline {
+    background: white;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.pill-verde { background: #33cc6b; }
+.pill-blu { background: #1f7bd8; }
+.pill-viola { background: #8e35d5; }
+.pill-arancione { background: #e67e22; }
+.pill-giallo { background: #f1c40f; color:#000; }
+.pill-oro { background: #D4AF37; color:#000; }
+
+/* CARDS */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px 20px;
+    border-left: 8px solid #000;
+}
+.card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.card p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* COLORI */
+.border-VIK { border-left-color: #33cc6b; }
+.border-SPORT { border-left-color: #1f7bd8; }
+.border-SPETTACOLI { border-left-color: #8e35d5; }
+.border-RANGER { border-left-color: #e67e22; }
+.border-TORNEI { border-left-color: #f1c40f; }
+.border-FITNESS { border-left-color: #D4AF37; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-size: 13px;
+}
