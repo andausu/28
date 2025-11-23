@@ -1,0 +1,190 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+
+/* TEST VISIVO: se vede questo sfondo beige, il CSS è caricato.
+   Se lo sfondo resta bianco come prima, NON sta usando questo file. */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: #f3ecdc; /* beige chiaro */
+}
+
+/* HEADER GRAFICO */
+.header-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.header-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.header-text {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
+}
+.header-text h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+.header-text p {
+  margin: 3px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* LINGUA */
+.lang-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 10px 20px 0;
+}
+.lang-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+.lang-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+/* FASCE */
+.fasce {
+  display: flex;
+  gap: 10px;
+  padding: 15px 20px;
+}
+.fascia-btn {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.fascia-btn.active {
+  background: #000;
+  color: #fff;
+}
+
+/* PILLS – PANNELLI LEGNO STILE JUMANJI */
+.pill-wrapper {
+  padding: 5px 20px;
+}
+.pill-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* base legno per tutti i pannelli */
+.pill {
+  position: relative;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 2px solid #3b2410;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+
+  background-image:
+    /* riflesso luce */
+    linear-gradient(135deg, rgba(255, 255, 255, 0.22), transparent 45%),
+    /* venature legno */
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.08) 0,
+      rgba(0, 0, 0, 0.08) 2px,
+      transparent 2px,
+      transparent 6px
+    );
+  box-shadow:
+    0 3px 0 rgba(0, 0, 0, 0.5),
+    0 7px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* “Tutti” = legno chiaro neutro */
+.pill-outline {
+  background-color: #d6ab6a;
+  color: #2a180b;
+  border-color: #3b2410;
+}
+
+/* Ogni settore = tavola dipinta sopra il legno */
+.pill-verde {
+  background-color: #2f8c4a;
+}
+.pill-blu {
+  background-color: #1f5f99;
+}
+.pill-viola {
+  background-color: #7b2fa9;
+}
+.pill-arancione {
+  background-color: #c96b19;
+}
+.pill-giallo {
+  background-color: #e0b321;
+  color: #2a180b;
+}
+.pill-oro {
+  background-color: #c4982b;
+  color: #2a180b;
+}
+
+/* CARDS */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 20px;
+  border-left: 8px solid #000;
+}
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.card p {
+  margin: 5px 0 0;
+  color: #555;
+}
+
+/* COLORI BORDO */
+.border-VIK {
+  border-left-color: #33cc6b;
+}
+.border-SPORT {
+  border-left-color: #1f7bd8;
+}
+.border-SPETTACOLI {
+  border-left-color: #8e35d5;
+}
+.border-RANGER {
+  border-left-color: #e67e22;
+}
+.border-TORNEI {
+  border-left-color: #f1c40f;
+}
+.border-FITNESS {
+  border-left-color: #d4af37;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 13px;
+}
